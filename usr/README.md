@@ -1,16 +1,16 @@
-# couldai_user_app
+# Aviator Game (Flutter)
 
-A new Flutter project.
+This is a Flutter implementation of a simple "Aviator" style crash game, based on the Python logic provided.
 
-## Getting Started
+## How to Play
 
-This project is a starting point for a Flutter application.
+1.  **Enter Bet**: Input your bet amount in the text field.
+2.  **Start Game**: Click "START GAME" to launch the plane.
+3.  **Watch Multiplier**: The multiplier increases over time.
+4.  **Cash Out**: Click "CASH OUT" before the plane crashes to win your bet multiplied by the current value.
+5.  **Crash**: If the plane crashes before you cash out, you lose your bet.
 
-A few resources to get you started if this is your first Flutter project:
+## Logic
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-   **Multiplier Increase**: Randomly between 1.01x and 1.10x every 0.5 seconds.
+-   **Crash Chance**: Increases as the multiplier grows, capped at 10% per tick.
